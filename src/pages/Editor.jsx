@@ -1,4 +1,5 @@
 import React from 'react'
+import {HtmlEditot,Image,Inject,Link,QuickToolbar,RichTextEditorComponent,Toolbar} from '@syncfusion/ej2-react-richtexteditor'
 
 const Editor = () => {
   return (
