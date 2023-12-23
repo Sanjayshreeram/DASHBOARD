@@ -71,9 +71,9 @@ const Navbar = () => {
       <Navbutton title="Menu" cusfunc={()=>setActiveMenu((prev)=>!prev)  } color="blue" icon={<AiOutlineMenu/>}/>
 
       <div className='flex'>
-      <Navbutton title="Cart" cusfunc={()=>handleClick('cart')  } color="blue" icon={<FiShoppingCart/>}/>
-      <Navbutton title="Chat" cusfunc={()=>handleClick('chat')  } color="blue" dotColor="red" icon={<BsChatLeft/>}/>
-      <Navbutton title="Chat" cusfunc={()=>handleClick('notification')} color="blue" dotColor="red" icon={<RiNotification3Line />}/>
+      <Navbutton title="Cart" cusfunc={()=>handleClick('cart')  } color="red" icon={<FiShoppingCart/>}/>
+      <Navbutton title="Chat" cusfunc={()=>handleClick('chat')  } color="red" dotColor="red" icon={<BsChatLeft/>}/>
+      <Navbutton title="Chat" cusfunc={()=>handleClick('notification')} color="black" dotColor="red" icon={<RiNotification3Line />}/>
 
        <TooltipComponent content="profile" position='BottomCenter'>
       <div className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg' >

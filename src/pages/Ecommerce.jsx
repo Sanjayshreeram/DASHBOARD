@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsCurrencyDollar } from 'react-icons/bs'
-import {GoPrimitiveDot} from 'react-icons/go';
+// import { GoPrimitiveDot } from 'react-icons/go';
 import welcome from '../data/welcome-bg.svg'
 import { Stacked,Pie,Button,SparkLine } from '../components';
 import { earningData,SparklineAreaData,ecomPieChartData } from '../data/dummy';
@@ -12,7 +12,7 @@ const Ecommerce = () => {
       <div className='flex  flex-wrap lg:flex-nowrap justify-center'>
      <div className='bg-white  dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-gradient-to-r from-indigo-300 from-10% via-sky-400 via-30% to-emerald-200 to-90%    '>
    
-       <div className='flex  justify-betweens items-center '>
+       <div className='flex  justify-between items-center '>
         <div>
           <p className='font-bold text-gray-600'>
             Earnings
@@ -61,6 +61,105 @@ const Ecommerce = () => {
        </div>
 
      
+     </div>
+
+
+     <div className='flex gap-10 flex-wrap justify-center'>
+
+      <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 rounded-2xl md:w-780   '>
+
+        <div className='flex justify-between'>
+          <p className='font-semibold text-xl'>
+            Revenue Update
+
+          </p>
+          <div className='flex items-center gap-4 '>
+            <p className='flex items-center gap-2 text-gray-600 '>
+              <span className=''>
+                {'*'}
+
+               
+
+              </span>
+              <span className='font-semibold'>
+
+                Expense
+
+              </span>
+            </p>
+            <p className='flex items-center gap-2 text-gray-600 '>
+              <span className=''>
+                {'*'}
+               
+
+              </span>
+              <span className='font-semibold text-green-500'> 
+                Budget
+                
+              </span>
+            </p>
+
+
+          </div>
+
+        </div>
+        <div className='mt-10 flex gap-10 flex-wrap justify-center'>
+
+  <div className='border-r-1 border-color m-4 pr-10'>
+    <div>
+      <p>
+        <span className='text-2xl font-semibold'>
+          $93,478
+
+        </span>
+        <span className='p-1 bg-red-300 hover:drop-shadow-xl cursor-pointer rounded-full text-white '>
+          23%
+
+        </span>
+      </p>
+      <p className="text-gray-300 font-semibold mt-1">
+        Budget
+        </p>
+    </div>
+    <div className='mt-3'>
+      <p>
+        <span className='text-2xl font-semibold'>
+          $43,478
+
+        </span>
+        <span className='p-1 bg-green-300 hover:drop-shadow-xl cursor-pointer rounded-full text-white '>
+          15%
+
+        </span>
+      </p>
+      <p className="text-gray-300 font-semibold mt-1">
+        Expense
+        </p>
+    </div>
+    <div className='mt-5'>
+      <SparkLine currentcolor="blue" id="line-sparkline" type="Line" height="80px" width="250px" data={SparklineAreaData} color="blue" />
+
+    </div>
+    <div className='mt-10'>
+      <Button color="white" bgcolor="blue" text="Download Report" borderRadius="10px">
+
+      </Button>
+
+    </div>
+
+
+  </div>
+  <div>
+    <Stacked width="300px" height="360px" />
+
+  </div>
+        </div>
+        
+        </div> 
+
+        
+
+
      </div>
 
       </div>
