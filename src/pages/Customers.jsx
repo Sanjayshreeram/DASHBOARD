@@ -20,7 +20,7 @@ const Customers = () => {
       
       
       </ColumnsDirective>
-      <Inject services={[Page,Search,Toolbar]}/>
+      <Inject services={[Page,Search,Toolbar,Selection,Edit,Sort,Filter]}/>
     </GridComponent>
 
 
