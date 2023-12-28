@@ -8,7 +8,7 @@ import { useStateContext } from '../contexts/ContextProvider.jsx';
 
 import {links} from '../data/dummy.js';
 const Sidebar = () => {
-  const {activemenu,setActiveMenu,screensize}=useStateContext();
+  const {activemenu,setActiveMenu,screensize,currentcolor}=useStateContext();
 
   const handleclosesidebar=()=>{
 
@@ -57,9 +57,15 @@ const Sidebar = () => {
                     <div>
                        {
                         item.links.map((element)=>(
-                          <NavLink to={`${element.name} `} key={element.name} onClick={()=>{handleclosesidebar}} className={({isActive})=>isActive ?activeLink:normalLink}>
+                          <NavLink to={`${element.name} `} key={element.name} onClick={()=>{handleclosesidebar}} className={({isActive})=>isActive ?activeLink:normalLink} style={({isActive})=> ({
 
-                        {element.icon}   
+                            backgroundColor:isActive ?
+                            currentcolor:''
+
+
+                          })}>
+
+                        {element.icon}  
                         <span>
                           {element.name}
                         </span>

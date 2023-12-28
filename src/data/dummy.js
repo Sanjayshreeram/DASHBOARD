@@ -828,21 +828,33 @@ export const themeColors = [
     name: 'green-theme',
     color: '#03C9D7',
   },
-  {
-    name: 'purple-theme',
-    color: '#7352FF',
-  },
+
   {
     name: 'red-theme',
     color: '#FF5C8E',
   },
   {
-    name: 'indigo-theme',
-    color: '#1E4DB7',
+    name: 'Radiant Sun',
+    color: '#FFD700',
+  },
+ 
+  {
+    name: 'Charcoal Grey',
+    color: '#36454F',
+  },
+ 
+
+  {
+    name: 'Ebony',
+    color: '#555D50',
   },
   {
-    color: '#FB9678',
-    name: 'orange-theme',
+    name: 'Navy Blue',
+    color: '#000080',
+  },
+  {
+    name: 'Olive Drab',
+    color: '#6B8E23',
   },
 ];
 
