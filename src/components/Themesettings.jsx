@@ -37,7 +37,7 @@ const Themesettings = () => {
 
      </div>
      <div className='mt-4'>
-      <input type="radio" id="Dark" name="theme" value="Dark" className='cursor-pointer' onChange={setmode} checked={currentmode==='Dark'}>
+      <input type="radio" id="dark" name="theme" value="Dark" className='cursor-pointer' onChange={setmode} checked={currentmode==='Dark'}>
       
       </input>
       <label htmlFor='Dark' className='ml-2 text-md cursor-pointer'>

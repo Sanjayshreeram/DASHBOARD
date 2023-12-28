@@ -23,7 +23,8 @@ export const ContextProvider = ({children}) => {
  const setmode=(e)=>{
   setcurrentmode(e.target.value);
   console.log(e.target.value)
-  localStorage.setItem('themeMode',e.target.value )
+  localStorage.setItem('themeMode',e.target.value );
+  
 
 
 
@@ -32,7 +33,7 @@ export const ContextProvider = ({children}) => {
  const setcolor=(color)=>{
   setcurrentcolor(color);
   localStorage.setItem('colorMode',color);
-  setthemesettings(false);
+ 
 
 
 
