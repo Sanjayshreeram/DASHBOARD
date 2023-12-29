@@ -7,11 +7,20 @@ import {Navbar,Footer,Sidebar,Themesettings} from './components';
 import {Ecommerce,Orders,Employees,Customers,Kanban,Editor,Calendar,ColorPicker,Area,Bar,Financial,} from './pages';
 import {Pie,ColorMapping,Line,Pyramid,Stacked} from './pages';
 import { useStateContext  } from './contexts/ContextProvider';
+import { useEffect } from 'react';
 
 const App = () => {
   
-  const {activemenu,themesettings,setthemesettings,currentcolor,currentmode}=useStateContext();
+  const {activemenu,themesettings,setthemesettings,currentcolor,currentmode,setcurrentmode}=useStateContext();
   
+
+  useEffect(() => {
+    // Get the stored theme mode from local storage when the component mounts
+    const storedThemeMode = localStorage.getItem('themeMode');
+    if (storedThemeMode) {
+      setcurrentmode(storedThemeMode); // Update the state if a theme mode is stored
+    }
+  });
   return (
 
     <div className={currentmode==='Dark' ? 'dark' :''}>
