@@ -43,11 +43,18 @@ export const ContextProvider = ({children}) => {
 
  }
 
- const handleClick=(name)=>{
-   return  setisclicked(({...initialState,[name]:true}));
-   setthemesettings(false);
+ const handleClick = (name) => {
+  setisclicked(currentState => {
+    // Check if the current state for 'name' is true (or truthy)
+    const isCurrentlyClicked = currentState[name];
 
- }
+    // Toggle the state: if true, set to false, and vice versa
+    return {
+      ...currentState, // Spread the current state
+      [name]: !isCurrentlyClicked // Toggle the specific property
+    };
+  });
+};
  
     
   
